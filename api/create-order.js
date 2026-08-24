@@ -11,7 +11,12 @@ export default async function handler(req,res){
   const orderNumber=`TGL-${Date.now().toString().slice(-8)}`;
   const row={order_number:orderNumber,customer_name:customer.name,phone:customer.phone,email:customer.email,address:customer.address,items:cleanItems,subtotal,shipping,total,payment_status:'pending',order_status:'new'};
   const r=await fetch(`${process.env.SUPABASE_URL}/rest/v1/orders`,{method:'POST',headers:{apikey:process.env.SUPABASE_SERVICE_ROLE_KEY,Authorization:`Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}`,'Content-Type':'application/json',Prefer:'return=representation'},body:JSON.stringify(row)});
-  const data=await r.json(); if(!r.ok)return res.status(r.status).json(data);
+  const data = await r.json();
+
+if (!r.ok) {
+  console.error("SUPABASE ERROR:", data);
+  throw new Error(JSON.stringify(data));
+}
   return res.status(200).json({ok:true,orderId:data[0].id,orderNumber,total});
  }catch(e){return res.status(500).json({error:e.message});}
 }
