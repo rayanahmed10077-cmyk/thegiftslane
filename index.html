@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff8f6">
+<meta name="description" content="The Gifts Lane — thoughtful gifts, bouquets, hampers and personalised surprises.">
+<title>The Gifts Lane — Gifts Made Personal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+</head>
+<body>
+<div class="announcement">Free delivery on orders ₹999+ <span>•</span> Bangalore delivery available</div>
+
+<header class="site-header">
+  <a class="logo" href="#home"><span class="logo-mark">♡</span><span>The Gifts Lane<small>Gifts made personal</small></span></a>
+  <nav class="desktop-nav">
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#custom">Custom Gifts</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <a class="header-wa" href="https://wa.me/919019367522" target="_blank" rel="noreferrer">WhatsApp</a>
+    <button class="cart-button" data-open-cart>Cart <span data-cart-count>0</span></button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">THE GIFTS LANE • BANGALORE</span>
+    <h1>Little gifts.<br><em>Big feelings.</em></h1>
+    <p>Curated bouquets, gift boxes, celebration hampers and personalised surprises for the people who mean the most.</p>
+    <div class="hero-buttons"><a class="btn btn-dark" href="#shop">Shop gifts <b>→</b></a><a class="text-link" href="#categories">Explore categories</a></div>
+    <div class="hero-trust"><span>♡ Personalised</span><span>✓ Carefully packed</span><span>✦ Made with love</span></div>
+  </div>
+  <div class="hero-visual">
+    <img src="images/gift_01.jpg" alt="The Gifts Lane bouquet">
+    <div class="hero-label">GIFT<br><b>LANE</b></div>
+    <div class="hero-note"><strong>Made for your moment</strong><span>Birthdays • Anniversaries • Just because</span></div>
+  </div>
+</section>
+
+<section class="section intro" id="categories">
+  <div><span class="eyebrow">EXPLORE OUR CATEGORIES</span><h2>Something lovely<br>for every occasion.</h2></div>
+  <p>Pick a category, discover your favourite, then make it yours with a personal note, colour or custom touch.</p>
+</section>
+
+<section class="category-grid">
+  <a class="category-card category-one" href="#shop" data-filter-link="Gift Boxes"><span>01</span><div><h3>Gift Boxes</h3><p>Curated little surprises</p><b>Shop now →</b></div></a>
+  <a class="category-card category-two" href="#shop" data-filter-link="Bouquets"><span>02</span><div><h3>Bouquets</h3><p>Flowers, chocolates & joy</p><b>Shop now →</b></div></a>
+  <a class="category-card category-three" href="#shop" data-filter-link="Wedding Hampers"><span>03</span><div><h3>Hampers</h3><p>For celebrations & weddings</p><b>Explore →</b></div></a>
+  <a class="category-card category-four" href="#shop" data-filter-link="Custom Gifts"><span>04</span><div><h3>Custom Gifts</h3><p>Made around your idea</p><b>Create yours →</b></div></a>
+</section>
+
+<section class="shop section" id="shop">
+  <div class="section-heading">
+    <div><span class="eyebrow">THE GIFTS LANE SHOP</span><h2>Trending gifts</h2><p>Beautiful picks, ready to order.</p></div>
+    <div class="shop-tools">
+      <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Search products..."></label>
+    </div>
+  </div>
+  <div class="filter-row">
+    <button class="filter active" data-filter="All">All</button>
+    <button class="filter" data-filter="Gift Boxes">Gift Boxes</button>
+    <button class="filter" data-filter="Bouquets">Bouquets</button>
+    <button class="filter" data-filter="Custom Gifts">Custom Gifts</button>
+    <button class="filter" data-filter="Wedding Hampers">Hampers</button>
+  </div>
+  <div class="shop-meta"><span id="resultCount">12 gifts</span><span>UPI accepted • Easy checkout</span></div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="custom-section" id="custom">
+  <div class="custom-image"><img src="images/gift_11.jpg" alt="Personalised gift basket"><div class="round-sticker">YOUR IDEA<br><b>♡</b><br>OUR CREATIVITY</div></div>
+  <div class="custom-copy"><span class="eyebrow">CUSTOM GIFTS</span><h2>Make it<br><em>uniquely theirs.</em></h2><p>Have a colour, theme, photo, message or budget in mind? Tell us what you’re imagining and we’ll turn it into a gift made especially for them.</p><ul><li>Custom colours and themes</li><li>Personalised messages and photos</li><li>Birthday & anniversary gifting</li><li>Wedding and festive hampers</li></ul><a class="btn btn-dark" href="https://wa.me/919019367522?text=Hi%20The%20Gifts%20Lane%2C%20I%27d%20like%20a%20customised%20gift." target="_blank" rel="noreferrer">Start a custom enquiry →</a></div>
+</section>
+
+<section class="story section">
+  <div><span class="eyebrow">WHY THE GIFTS LANE</span><h2>Thoughtful by<br>design.</h2></div>
+  <div class="story-copy"><p>A gift is a small way of saying, “I thought of you.” We focus on the details — colours, textures, tiny surprises and personal touches — so your gift feels as special as the person receiving it.</p><p>Choose from our collection or message us when you want something made just for your moment.</p><a class="text-link" href="https://wa.me/919019367522" target="_blank" rel="noreferrer">Talk to us on WhatsApp →</a></div>
+</section>
+
+<section class="contact" id="contact">
+  <div><span class="eyebrow">LET'S CREATE SOMETHING SPECIAL</span><h2>Need help choosing?</h2><p>Tell us the occasion, budget and who you’re gifting. We’ll help you find something lovely.</p></div>
+  <div class="contact-actions"><a class="btn btn-light" href="https://wa.me/919019367522" target="_blank" rel="noreferrer">WhatsApp • +91 90193 67522</a><a href="https://www.instagram.com/thegiftslane_/" target="_blank" rel="noreferrer">Instagram @thegiftslane_ ↗</a></div>
+</section>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-head"><div><span class="eyebrow">YOUR CART</span><h2>Your gifts</h2></div><button class="close" data-close-cart>×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-summary"><div><span>Subtotal</span><b id="cartSubtotal">₹0</b></div><div><span>Delivery</span><b id="cartShipping">FREE</b></div><div class="grand-total"><span>Total</span><b id="cartTotal">₹0</b></div><button class="btn btn-dark full" data-checkout>Continue to checkout</button><small>Free delivery on orders ₹999+.</small></div>
+</aside>
+
+<div class="modal" id="checkoutModal">
+  <div class="modal-card checkout-card"><button class="close" data-close-checkout>×</button>
+    <div class="modal-heading"><span class="eyebrow">CHECKOUT</span><h2>Almost there.</h2><p>Enter your delivery details, then pay using your UPI app.</p></div>
+    <div class="checkout-layout">
+      <form id="checkoutForm">
+        <div class="form-grid"><label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label><label>Phone number<input name="phone" required pattern="[0-9 +()-]{10,}" autocomplete="tel" placeholder="10-digit mobile number"></label></div>
+        <label>Email<input type="email" name="email" required autocomplete="email" placeholder="you@example.com"></label>
+        <label>Delivery address<textarea name="address" required autocomplete="street-address" placeholder="House no., street, area, city, PIN code"></textarea></label>
+        <button class="btn btn-dark full" type="submit">Continue to UPI payment →</button>
+        <small>We use your details only to process and deliver your order.</small>
+      </form>
+      <div class="checkout-side"><div class="side-head"><h3>Order summary</h3><span>Step 1</span></div><div id="checkoutSummary"></div><div class="summary-total"><span>Total</span><b id="checkoutTotal">₹0</b></div>
+        <div class="upi-payment" id="upiPayment" hidden><div class="payment-step"><span>2</span><div><b>Pay with UPI</b><small>Google Pay, PhonePe, Paytm & more.</small></div></div>
+          <div class="upi-box"><div class="qr-wrap"><div id="upiQr"></div><small>Scan to pay</small></div><div class="upi-details"><span>UPI ID</span><strong id="upiIdText">7019445211@ybl</strong><button type="button" class="copy" id="copyUpi">Copy</button><span>Amount</span><strong class="upi-amount" id="upiAmount">₹0</strong></div></div>
+          <a id="upiPayLink" class="btn btn-dark full" href="#">Open UPI app</a><div class="order-ref">Order <b id="orderNumberText">—</b></div>
+          <label>UPI transaction ID / UTR<input id="upiTxnId" placeholder="Enter the UTR after payment"></label>
+          <button type="button" class="btn btn-dark full" id="confirmUpi">I have paid — place order</button><small>Payment is manually verified before the order is marked paid.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="successModal"><div class="modal-card success-card"><div class="success-icon">✓</div><span class="eyebrow">ORDER RECEIVED</span><h2>Thank you!</h2><p id="successText">Your order has been placed successfully.</p><a class="btn btn-dark" href="https://wa.me/919019367522" target="_blank" rel="noreferrer">Chat on WhatsApp</a><button class="text-button" data-close-success>Continue shopping</button></div></div>
+<div class="toast" id="toast"></div>
+</main>
+
+<footer><div class="footer-main"><a class="logo" href="#home"><span class="logo-mark">♡</span><span>The Gifts Lane<small>Gifts made personal</small></span></a><div><b>Shop</b><a href="#shop">All gifts</a><a href="#categories">Categories</a><a href="#custom">Custom gifts</a></div><div><b>Help</b><a href="#contact">Contact us</a><a href="https://wa.me/919019367522" target="_blank" rel="noreferrer">WhatsApp</a><a href="https://www.instagram.com/thegiftslane_/" target="_blank" rel="noreferrer">Instagram</a></div></div><div class="footer-bottom"><span>Bangalore • PAN-India gifting</span><span>© 2026 The Gifts Lane</span></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
