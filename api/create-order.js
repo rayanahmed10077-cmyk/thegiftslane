@@ -18,5 +18,11 @@ if (!r.ok) {
   throw new Error(JSON.stringify(data));
 }
   return res.status(200).json({ok:true,orderId:data[0].id,orderNumber,total});
- }catch(e){return res.status(500).json({error:e.message});}
+ }catch(e){
+  console.error("CREATE ORDER ERROR:", e);
+  return res.status(500).json({
+    error:"CREATE_ORDER_FAILED",
+    details:e.message
+  });
+}
 }
