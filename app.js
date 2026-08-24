@@ -61,7 +61,7 @@ async function payNow(e){
   const upiUrl=`upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(UPI_NAME)}&am=${encodeURIComponent(Number(result.total).toFixed(2))}&cu=INR&tn=${encodeURIComponent(result.orderNumber)}`;
   document.getElementById('upiPayLink').href=upiUrl;const qr=document.getElementById('upiQr');qr.innerHTML='';new QRCode(qr,{text:upiUrl,width:210,height:210,colorDark:'#3b2430',colorLight:'#ffffff'});
   const confirm=document.getElementById('confirmUpi');confirm.dataset.orderId=result.orderId;confirm.dataset.orderNumber=result.orderNumber;form.classList.add('submitted');btn.textContent='Payment step ready';toast('Order created. Complete the UPI payment.');
- }catch(err){console.error(err);toast('Could not create the order. Please try again.');btn.disabled=false;btn.textContent='Continue to UPI payment'}
+ toast(err.message || "Could not create the order.");
 }
 async function confirmUpi(){
  const btn=document.getElementById('confirmUpi'),txn=document.getElementById('upiTxnId').value.trim();if(!txn){document.getElementById('upiTxnId').focus();toast('Enter your UPI transaction ID / UTR');return}
